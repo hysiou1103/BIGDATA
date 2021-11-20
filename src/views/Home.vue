@@ -126,7 +126,7 @@ export default {
     const vm = this
     vm.isLoading = true
     vm.$http
-      .get(`/api/v1/datastore/ODRP019/109?COUNTY=臺北市`)
+      .get(`https://www.ris.gov.tw/rs-opendata/api/v1/datastore/ODRP019/109?COUNTY=臺北市`)
       .then((res) => {
         console.log(res)
         if (res.data.responseMessage === '處理完成') {
